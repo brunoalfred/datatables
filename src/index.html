@@ -502,7 +502,10 @@
 		$(document).ready(function() {
     $('#example').DataTable(
         {
-                 order: [[ 3, 'desc' ], [ 0, 'asc' ]]
+                 order: [[ 3, 'desc' ], [ 0, 'asc' ]],
+                  "scrollY":        "200px",
+                  "scrollCollapse": true,
+                  "paging": false
         });
 } );
 	</script>
