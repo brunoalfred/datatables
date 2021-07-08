@@ -13,45 +13,13 @@
 <body>
 
 
-<table id="example" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>
-    </table>
+<table id="example" class="display" width="100%"></table>
+
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-    $('#example').DataTable(
-        {
-                 order: [[ 3, 'desc' ], [ 0, 'asc' ]],
-                  "scrollY":        "200px",
-                  "scrollCollapse": true,
-                  "paging": false,
-                  "ajax": './data/arrays.txt'
-        });
-} );
-	</script>
+    <script type="text/javascript" src="./main.js"></script>
 
 </body>
 </html>
